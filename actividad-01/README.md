@@ -81,5 +81,5 @@ La estrategia es rentable cuando:
 - Implementar con datos reales de mercado
 
 ---
-**Fecha de entrega:** 01 de Julio, 2025  
+**Fecha de entrega:** 07 de Julio, 2025  
 **Formato:** PDF + código Python (.py)
