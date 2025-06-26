@@ -57,9 +57,9 @@ git pull origin main
 
 ## 📞 Contacto y Soporte
 
-- **Profesor:** [Tu Nombre]
-- **Email:** [tu-email@universidad.edu]
-- **Horario de consultas:** [Horarios]
+- **Profesor:** Dr. Rodolfo Rafael Medina Ramírez
+- **Foro:** "Pregúntale a tu profesor" Aula virtual Moodle
+- **Horario de consultas:** a más tardar 48h después de publicada la pregunta en el foro
 
 ## 📖 Recursos Adicionales
 
