@@ -9,7 +9,7 @@ Aprender análisis cuantitativo aplicado a finanzas mediante programación en Py
 
 ### 📁 Actividades
 - **[Actividad 01](./actividad-01/)** - Análisis de Estrategia Long Straddle
-- **[Actividad 02](./actividad-02/)** - *(Próximamente)*
+- **[Actividad 02](./actividad-02/)** - Algoritmo Hull-White para Calibración de Parámetros Binomiales
 - **[Actividad 03](./actividad-03/)** - *(Próximamente)*
 
 ### 📁 Ejemplos de Clase
@@ -47,12 +47,14 @@ git pull origin main
 | Actividad | Fecha Publicación | Fecha Entrega | Estado |
 |-----------|------------------|---------------|--------|
 | Long Straddle | 26 Jun 2025 | 01 Jul 2025 | ✅ Disponible |
-| Actividad 02 | TBA | TBA | ⏳ Próximamente |
+| Hull-White Algorithm | 08 Jul 2025 | 15 Jul 2025 | ✅ Disponible |
+| Actividad 03 | TBA | TBA | ⏳ Próximamente |
 
 ## 🛠️ Herramientas Requeridas
 
 - **Python 3.8+**
 - **Librerías:** numpy, pandas, matplotlib, seaborn, scipy
+- **MATLAB R2020a+** *(opcional, para comparaciones)*
 - **IDE recomendado:** Visual Studio Code, PyCharm, o Jupyter Notebook
 
 ## 📞 Contacto y Soporte
@@ -77,4 +79,4 @@ git pull origin main
 🔄 **Actualizaciones:** Este repositorio se actualiza semanalmente con nuevo contenido.
 
 ---
-*Última actualización: 26 de Junio, 2025*
+*Última actualización: 08 de Julio, 2025*
