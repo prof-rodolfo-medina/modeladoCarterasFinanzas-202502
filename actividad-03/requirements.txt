@@ -1,0 +1,22 @@
+# Dependencias para Actividad 03: Optimización de Carteras
+# Universidad Internacional de La Rioja (UNIR)
+
+# Core scientific computing
+numpy>=1.21.0
+pandas>=1.3.0
+scipy>=1.7.0
+
+# Visualization
+matplotlib>=3.5.0
+seaborn>=0.11.0
+
+# Data fetching
+yfinance>=0.2.0
+
+# Optional: Jupyter support
+jupyter>=1.0.0
+notebook>=6.4.0
+ipywidgets>=7.6.0
+
+# Optional: Advanced portfolio optimization
+# PyPortfolioOpt>=1.5.0
