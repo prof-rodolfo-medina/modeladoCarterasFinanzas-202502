@@ -1,0 +1,21 @@
+ticker,nombre,sector,rendimiento_esperado,volatilidad
+AAPL,Apple Inc.,Tecnología,0.15,0.25
+GOOGL,Alphabet Inc.,Tecnología,0.12,0.22
+MSFT,Microsoft Corp.,Tecnología,0.13,0.20
+AMZN,Amazon.com Inc.,Consumo Discrecional,0.18,0.30
+TSLA,Tesla Inc.,Consumo Discrecional,0.20,0.35
+JPM,JPMorgan Chase,Financiero,0.11,0.24
+JNJ,Johnson & Johnson,Salud,0.09,0.16
+XOM,Exxon Mobil,Energía,0.10,0.28
+WMT,Walmart Inc.,Consumo Básico,0.08,0.18
+PG,Procter & Gamble,Conticker,nombre,sector,rendimiento_esperado,volatilidad
+AAPL,Apple Inc.,Tecnología,0.15,0.25
+GOOGL,Alphabet Inc.,Tecnología,0.12,0.22
+MSFT,Microsoft Corp.,Tecnología,0.13,0.20
+AMZN,Amazon.com Inc.,Consumo Discrecional,0.18,0.30
+TSLA,Tesla Inc.,Consumo Discrecional,0.20,0.35
+JPM,JPMorgan Chase,Financiero,0.11,0.24
+JNJ,Johnson & Johnson,Salud,0.09,0.16
+XOM,Exxon Mobil,Energía,0.10,0.28
+WMT,Walmart Inc.,Consumo Básico,0.08,0.18
+PG,Procter & Gamble,Consumo Básico,0.07,0.15sumo Básico,0.07,0.15
