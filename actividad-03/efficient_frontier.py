@@ -215,6 +215,7 @@ if __name__ == "__main__":
     volatilities = np.array([0.25, 0.22, 0.20, 0.30, 0.35])
     cov_matrix = np.outer(volatilities, volatilities) * corr_matrix
     
+    # Crear objeto EfficientFrontier
     ef = EfficientFrontier(expected_returns, cov_matrix, risk_free_rate=0.03)
     
     print("\n📊 CARTERA TANGENTE:")
@@ -222,10 +223,49 @@ if __name__ == "__main__":
     print(f"   Rendimiento: {tangent['return']*100:.2f}%")
     print(f"   Volatilidad: {tangent['volatility']*100:.2f}%")
     print(f"   Sharpe: {tangent['sharpe']:.4f}")
+    print("\n   Composición:")
+    for name, weight in zip(asset_names, tangent['weights']):
+        if weight > 0.01:
+            print(f"     {name}: {weight*100:.2f}%")
     
     print("\n📉 CARTERA MÍNIMA VARIANZA:")
     min_var = ef.min_variance_portfolio()
     print(f"   Rendimiento: {min_var['return']*100:.2f}%")
     print(f"   Volatilidad: {min_var['volatility']*100:.2f}%")
+    print(f"   Sharpe: {min_var['sharpe']:.4f}")
+    
+    print("\n" + "=" * 70)
+    print("📈 GENERANDO GRÁFICA DE LA FRONTERA EFICIENTE...")
+    print("=" * 70)
+    
+    try:
+        # Generar la figura
+        import os
+        print(f"Directorio actual: {os.getcwd()}")
+        
+        fig = ef.plot_efficient_frontier(show_random=True, n_random=5000, show_cml=True)
+        
+        # Intentar guardar
+        output_file = 'frontera_eficiente.png'
+        plt.savefig(output_file, dpi=300, bbox_inches='tight')
+        
+        # Verificar que se creó
+        if os.path.exists(output_file):
+            file_size = os.path.getsize(output_file)
+            print(f"\n✅ Gráfica guardada exitosamente:")
+            print(f"   Archivo: {output_file}")
+            print(f"   Tamaño: {file_size:,} bytes")
+            print(f"   Ubicación: {os.path.abspath(output_file)}")
+        else:
+            print(f"\n❌ ERROR: El archivo no se creó")
+        
+        # Intentar mostrar
+        print("\nIntentando mostrar la gráfica...")
+        plt.show()
+        
+    except Exception as e:
+        print(f"\n❌ ERROR al generar la gráfica: {e}")
+        import traceback
+        traceback.print_exc()
     
     print("\n" + "=" * 70)
